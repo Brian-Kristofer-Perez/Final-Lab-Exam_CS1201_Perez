@@ -93,16 +93,20 @@ class UserManager:
 				print("Username doesn't exist. Please make one first.")
 				continue
 
+
+
 			password = input("Input your password (leave blank to go back): ")
 
 			if not password:
 				menu.menu.main_menu()
 
-			if password != usermanager.content[list(map(lambda x: x.name, usermanager.content)).index(username)].password:
+			user_object = usermanager.content[list(map(lambda x: x.name, usermanager.content)).index(username)]
+
+			if password != user_object.password:
 				print("Incorrect password, try again.")
 				continue
 
-			menu.menu.login_menu(username)
+			menu.menu.login_menu(user_object)
 			break
 
 

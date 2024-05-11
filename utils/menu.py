@@ -31,11 +31,11 @@ class Menu:
                 continue
 
 
-    def login_menu(self, username):
+    def login_menu(self, user_obj):
         while True:
             try:
 
-                print(f"Welcome, {username}!")
+                print(f"Welcome, {user_obj.name}!")
 
                 print("Log in Menu")
                 print("1. Start Game")
