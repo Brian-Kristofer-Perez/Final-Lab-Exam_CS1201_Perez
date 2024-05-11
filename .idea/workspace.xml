@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="commit before the game work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dice_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user.py" afterDir="false" />
-    </list>
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715430564874</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards">
+      <option name="closed" value="true" />
+      <created>1715433892042</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715433892042</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,7 +173,8 @@
     <MESSAGE value="fixed directory issue" />
     <MESSAGE value="otw to fixing bugs, refactoring stuff before the game module" />
     <MESSAGE value="commit before the game work" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit before the game work" />
+    <MESSAGE value="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards" />
+    <option name="LAST_COMMIT_MESSAGE" value="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
