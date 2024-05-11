@@ -61,5 +61,7 @@ class Menu:
 menu = Menu()
 
 if __name__ == "__main__":
+
+    user_manager.usermanager.load_users()
     menu.main_menu()
 

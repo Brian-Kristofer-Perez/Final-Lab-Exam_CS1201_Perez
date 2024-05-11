@@ -6,8 +6,13 @@ class UserManager:
 
 	def __init__(self):
 
-		# entire block is for initializing files
 
+
+		self.content = []  #this list will contain player objects
+		self.info = []  #temporary storage for processing
+
+
+		# entire block is for initializing files
 		if not os.path.exists("utils/data"):  #if no data folder, make files & folder
 			os.makedirs("utils/data")
 			file = open("utils/data/users.txt", "w")
@@ -19,19 +24,16 @@ class UserManager:
 			else:  # else read
 				self.load_users()
 
-		self.content = []  #this list will contain player objects
-		self.info = []  #temporary storage for processing
-
 
 
 
 	def load_users(self):
 
-		with open("data/users.txt") as file:
+		with open("utils/data/users.txt") as file:
 			name_and_pass = str.split(file.read().strip(), "\n")  # returns a list
 
 			for i in name_and_pass:
-				self.info.append(str.split(i, ": "))
+				self.info.append(str.split(i, ", "))
 
 			for name, password in self.info:
 				self.content.append(user.User(name, password))
@@ -62,6 +64,8 @@ usermanager = UserManager()
 
 def main():
 	usermanager.load_users()
+
+
 
 
 if __name__ == "__main__":
