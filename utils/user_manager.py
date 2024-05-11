@@ -1,6 +1,6 @@
 import os
-import user
-import menu
+import utils.user as user
+import utils.menu as menu
 
 
 class UserManager:

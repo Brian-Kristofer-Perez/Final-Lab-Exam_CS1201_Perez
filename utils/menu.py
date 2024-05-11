@@ -1,4 +1,4 @@
-import user_manager
+import utils.user_manager as user_manager
 class Menu:
     def main_menu(self):
         while True:
