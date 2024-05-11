@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="fixed directory issue">
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="otw to fixing bugs, refactoring stuff before the game module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715420451130</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="otw to fixing bugs, refactoring stuff before the game module">
+      <option name="closed" value="true" />
+      <created>1715428329016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715428329016</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,7 +154,8 @@
     <MESSAGE value="user accounts reading done (cross module too!)" />
     <MESSAGE value="commit before testing (moved UI to inner directory for convenience)" />
     <MESSAGE value="fixed directory issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed directory issue" />
+    <MESSAGE value="otw to fixing bugs, refactoring stuff before the game module" />
+    <option name="LAST_COMMIT_MESSAGE" value="otw to fixing bugs, refactoring stuff before the game module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

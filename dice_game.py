@@ -10,7 +10,7 @@ class DiceGame:
     def save_scores(self):
         pass
 
-    def play_game(self):
+    def play_game(self, user):
         pass
 
     def show_top_scores(self):

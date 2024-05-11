@@ -3,9 +3,17 @@ class User:
     def __init__(self, name, password):
         self.name = name
         self.password = password
+        self.dice = 0
 
         self.scores = Scores()
 
+
+class CPU:
+
+    def __init__(self):
+        self.name = "CPU"
+        self.dice = 0
+        self.best_of_3 = BestOf3()
 
 
 
