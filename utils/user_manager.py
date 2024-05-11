@@ -80,8 +80,30 @@ class UserManager:
 
 			menu.menu.main_menu()
 
+
+
 	def login(self):
-		pass
+		while True:
+			username = input("Input your username (leave blank to go back): ")
+
+			if not username:
+				menu.menu.main_menu()
+
+			if username not in map(lambda x: x.name, usermanager.content):
+				print("Username doesn't exist. Please make one first.")
+				continue
+
+			password = input("Input your password (leave blank to go back): ")
+
+			if not password:
+				menu.menu.main_menu()
+
+			if password != usermanager.content[list(map(lambda x: x.name, usermanager.content)).index(username)].password:
+				print("Incorrect password, try again.")
+				continue
+
+			menu.menu.login_menu(username)
+			break
 
 
 

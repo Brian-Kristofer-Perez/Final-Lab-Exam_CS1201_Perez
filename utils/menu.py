@@ -1,5 +1,8 @@
 import utils.user_manager as user_manager
+
+
 class Menu:
+
     def main_menu(self):
         while True:
             try:
@@ -14,16 +17,18 @@ class Menu:
                     user_manager.usermanager.register()
                     break
                 elif choice == 2:
-                    # accounts.log_in()
+                    user_manager.usermanager.login()
                     break
                 elif choice == 3:
                     print("Thank you for playing")
                     exit(0)
                 else:
                     print("Enter a valid input\n")
+                    continue
 
             except ValueError:
                 print("Invalid choice\n")
+                continue
 
 
     def login_menu(self, username):
@@ -55,6 +60,7 @@ class Menu:
                     print("Enter a Valid Input\n")
             except ValueError:
                 print("Invalid choice\n")
+
 
 menu = Menu()
 

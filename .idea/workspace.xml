@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="commit before testing (moved UI to inner directory for convenience)">
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="fixed directory issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/user_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user_manager.py" afterDir="false" />
     </list>
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715420113043</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed directory issue">
+      <option name="closed" value="true" />
+      <created>1715420451130</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715420451130</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,19 +145,21 @@
     <MESSAGE value="Somewhat workable, I'll take it any day (working UI and import from user_manager.py" />
     <MESSAGE value="user accounts reading done (cross module too!)" />
     <MESSAGE value="commit before testing (moved UI to inner directory for convenience)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit before testing (moved UI to inner directory for convenience)" />
+    <MESSAGE value="fixed directory issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed directory issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/utils/menu.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/utils/menu.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
