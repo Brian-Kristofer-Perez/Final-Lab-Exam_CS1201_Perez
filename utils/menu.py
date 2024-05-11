@@ -1,4 +1,3 @@
-
 import user_manager
 class Menu:
     def main_menu(self):

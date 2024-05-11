@@ -1,5 +1,5 @@
 import os
-import utils.user as user
+import user
 import menu
 
 
