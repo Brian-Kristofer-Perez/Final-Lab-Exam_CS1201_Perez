@@ -1,3 +1,4 @@
+import utils.dice_game as dice_game
 import utils.user_manager as user_manager
 
 
@@ -46,9 +47,8 @@ class Menu:
 
                 if choice == 1:
 
-                    # game.initialize(username)
-                    # game.game.match()
-
+                    game = dice_game.DiceGame(user_obj)
+                    game.play_game()
                     break
                 elif choice == 2:
                     break

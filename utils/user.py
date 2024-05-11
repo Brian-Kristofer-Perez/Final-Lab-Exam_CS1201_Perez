@@ -1,14 +1,24 @@
-class User:
+import random
+
+
+class Entity:
+
+    def roll_dice(self):  #for inheritance
+        self.dice = random.randint(1, 6)
+
+
+
+class User(Entity):
 
     def __init__(self, name, password):
         self.name = name
         self.password = password
         self.dice = 0
 
-        self.scores = Scores()
+        self.score = Scores()
 
 
-class CPU:
+class CPU(Entity):
 
     def __init__(self):
         self.name = "CPU"

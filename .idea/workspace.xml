@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="otw to fixing bugs, refactoring stuff before the game module">
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="commit before the game work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dice_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Leonila Perez\Desktop\pythonProjectLab2\utils" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProjectLab2" />
@@ -145,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715428329016</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit before the game work">
+      <option name="closed" value="true" />
+      <created>1715430564874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715430564874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,20 +170,16 @@
     <MESSAGE value="commit before testing (moved UI to inner directory for convenience)" />
     <MESSAGE value="fixed directory issue" />
     <MESSAGE value="otw to fixing bugs, refactoring stuff before the game module" />
-    <option name="LAST_COMMIT_MESSAGE" value="otw to fixing bugs, refactoring stuff before the game module" />
+    <MESSAGE value="commit before the game work" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before the game work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/menu.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/menu.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/utils/dice_game.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
