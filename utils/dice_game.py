@@ -66,10 +66,27 @@ class DiceGame:
 
             file.close()
 
+            print("Scores saved to local leadeerboard.")
+
 
     def play_game(self):
 
-        while self.player.score.best_of_3.score != 3 and self.opponent.best_of_3.score != 3:  #this breaks the loop when one of them turns 2
+        while True:  #the actual gameplay
+
+
+            """The main flow goes something like this:
+            
+                While True:
+                    1. roll dice
+                    2. compare dice
+                    3. compare dice
+                    4. check if player won or lost the stage
+                    
+                    4a. if player won, give option to go again
+                    4b. if not, then go back to menu
+            
+            
+            """
 
             self.player.roll_dice()
             self.opponent.roll_dice()

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards">
-      <change afterPath="$PROJECT_DIR$/utils/score.py" afterDir="false" />
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="last bits of testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dice_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/user_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/user_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -177,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715436309693</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="last bits of testing">
+      <option name="closed" value="true" />
+      <created>1715475792183</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715475792183</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +195,8 @@
     <MESSAGE value="otw to fixing bugs, refactoring stuff before the game module" />
     <MESSAGE value="commit before the game work" />
     <MESSAGE value="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards" />
-    <option name="LAST_COMMIT_MESSAGE" value="somewhat working game IG? need testing till finish to account for errors, then work on leaderboards" />
+    <MESSAGE value="last bits of testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="last bits of testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -208,6 +215,11 @@
           <url>file://$PROJECT_DIR$/utils/dice_game.py</url>
           <line>36</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/dice_game.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -49,7 +49,7 @@ class Menu:
 
                     game = dice_game.DiceGame(user_obj)
                     game.play_game()
-                    break
+                    # break
                 elif choice == 2:
 
                     game = dice_game.DiceGame(user_obj)
