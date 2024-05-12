@@ -7,8 +7,6 @@ class UserManager:
 
 	def __init__(self):
 
-
-
 		self.content = []  #this list will contain player objects
 		self.info = []  #temporary storage for processing
 
@@ -44,8 +42,8 @@ class UserManager:
 
 		with open("utils/data/users.txt", "a") as file:
 			file.write(f"{username}, {password}\n")
+			usermanager.content.append(user.User(username, password))
 			file.close()
-			usermanager.load_users()
 
 
 	def register(self):
@@ -115,11 +113,3 @@ class UserManager:
 usermanager = UserManager()
 
 
-def main():
-	usermanager.load_users()
-
-
-
-
-if __name__ == "__main__":
-	main()

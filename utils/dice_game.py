@@ -1,25 +1,70 @@
 
 import utils.user as user
+import utils.menu as menu
+import os
+
 
 
 class DiceGame:
+
 
     def __init__(self, current_user):
         self.player = current_user  #load the player object
         self.opponent = user.CPU()
 
+        self.rankings = []
 
-    def load_scores(self):
-        pass
+
+        if not os.path.exists("utils/data"):  # if no data folder, make files & folder
+            os.makedirs("utils/data")
+            with open("utils/data/rankings.txt", "w") as file:  #create a data folder with ranking file
+                file.close()
+
+        if not os.path.exists("utils/data/rankings.txt"):
+            with open("utils/data/rankings.txt", "w") as file:  #if data folder exists but not file, create a ranking file
+                file.close()
+
+        with open("utils/data/rankings.txt") as file:
+            if not file.read():
+                pass
+
+            else:
+                self.read_rankings()
+
+
+    def show_top_scores(self):
+
+        with open("utils/data/rankings.txt") as file:
+            if not file.read():
+                print("Empty leaderboard. Play a game to add a record!")
+
+            else:
+
+                self.rankings.sort(key=lambda x: int(x[1]), reverse=True)
+
+                for i in self.rankings[:10]:
+                    print(f"{i[0]}: Points - {i[1]}, Stages - {i[2]}")
+
+
+    def read_rankings(self):
+
+        with open("utils/data/rankings.txt", "r") as file:
+
+            unread_rankings = str.split(file.read().strip(), "\n")
+
+            for i in unread_rankings:
+
+                self.rankings.append(str.split(i, ": "))
+
 
     def save_scores(self):
-        pass
+        with open("utils/data/rankings.txt", "a") as file:
 
-    # def play_game(self):
-    #
-    #     playing = True
-    #     while playing:
-    #         self.play_game_stage()
+            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}")
+
+            self.rankings.append(str.split(f"{self.player.name}, {self.player.score.total_score}, {self.player.score.stages_won}", ", "))
+
+            file.close()
 
 
     def play_game(self):
@@ -44,8 +89,8 @@ class DiceGame:
                     continue
 
                 if not next_stage:
-                    # save score()
-                    break
+                    self.save_scores()
+                    menu.menu.login_menu(self.player)
 
 
 
@@ -89,8 +134,6 @@ class DiceGame:
         print(f"Total points: {self.player.score.total_score}, Stages won: {self.player.score.stages_won}\n")
 
 
-
-
     def lose(self):
 
         print("Game over. You didn't win any stages.")
@@ -101,11 +144,6 @@ class DiceGame:
         self.player.score.total_score = 0  #reset wins
         self.player.score.stages_won = 0
 
-    def show_top_scores(self):
-        pass
-
-    def logout(self):
-        pass
 
     def menu(self):
 

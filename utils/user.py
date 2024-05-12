@@ -44,10 +44,3 @@ class BestOf3:
         self.score = 0
 
 
-def main():
-    pass
-
-
-if __name__ == "__main__":
-
-    main()

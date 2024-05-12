@@ -51,10 +51,14 @@ class Menu:
                     game.play_game()
                     break
                 elif choice == 2:
-                    break
-                    pass
+
+                    game = dice_game.DiceGame(user_obj)
+                    game.show_top_scores()
+                    continue
+
                 elif choice == 3:
-                    # main_menu()
+
+                    menu.main_menu()
                     break
                 else:
                     print("Enter a Valid Input\n")
@@ -63,7 +67,3 @@ class Menu:
 
 
 menu = Menu()
-
-if __name__ == "__main__":
-
-    menu.main_menu()
