@@ -2,7 +2,7 @@
 import utils.user as user
 import utils.menu as menu
 import os
-import datetime
+from datetime import datetime
 
 
 
@@ -58,15 +58,21 @@ class DiceGame:
 
                 self.rankings.sort(key=lambda x: int(x[1]), reverse=True)  #sort rankings by score
 
+                count = 1
+
                 for i in self.rankings[:10]:  #pick out only the top 10 best among all scores in the file
-                    print(f"{i[0]}: Points - {i[1]}, Stages - {i[2]}")
+                    print(f"{count}. {i[0]}: Points - {i[1]}, Stages - {i[2]}")
+
+                    count += 1
 
 
     def save_scores(self):
         with open("utils/data/rankings.txt", "a") as file:
 
-            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            # save file with date
+            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
+            # add to list
             self.rankings.append(str.split(f"{self.player.name}, {self.player.score.total_score}, {self.player.score.stages_won}", ", "))
 
             file.close()
@@ -88,10 +94,11 @@ class DiceGame:
                 While True:
                     1. roll dice
                     2. compare dice
-                    3. compare dice
-                    4. check if player won or lost the stage
+                    3. check if player won or lost
                     
-                    4a. if player won, give option to go again
+                    repeat 1-3 until someone gets 3 wins 
+                    
+                    4a. if player gets 3 wins, give option to go again or leave and save results
                     4b. if not, then go back to menu
             
             
