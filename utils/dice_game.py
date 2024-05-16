@@ -33,18 +33,7 @@ class DiceGame:
 
 
 
-    def show_top_scores(self):
 
-        with open("utils/data/rankings.txt") as file:
-            if not file.read():
-                print("Empty leaderboard. Play a game to add a record!")
-
-            else:
-
-                self.rankings.sort(key=lambda x: int(x[1]), reverse=True)
-
-                for i in self.rankings[:10]:
-                    print(f"{i[0]}: Points - {i[1]}, Stages - {i[2]}")
 
 
     def read_rankings(self):
@@ -56,6 +45,20 @@ class DiceGame:
             for i in unread_rankings:
 
                 self.rankings.append(str.split(i, ": "))
+
+
+    def show_top_scores(self):
+
+        with open("utils/data/rankings.txt") as file:
+            if not file.read():
+                print("Empty leaderboard. Play a game to add a record!")
+
+            else:
+
+                self.rankings.sort(key=lambda x: int(x[1]), reverse=True)  #sort rankings by score
+
+                for i in self.rankings[:10]:  #pick out only the top 10 best among all scores in the file
+                    print(f"{i[0]}: Points - {i[1]}, Stages - {i[2]}")
 
 
     def save_scores(self):
