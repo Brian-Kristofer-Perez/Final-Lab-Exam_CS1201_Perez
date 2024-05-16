@@ -64,13 +64,13 @@ class DiceGame:
     def save_scores(self):
         with open("utils/data/rankings.txt", "a") as file:
 
-            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}")
+            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}\n")
 
             self.rankings.append(str.split(f"{self.player.name}, {self.player.score.total_score}, {self.player.score.stages_won}", ", "))
 
             file.close()
 
-            print("Scores saved to local leadeerboard.")
+            print("Scores saved to local leaderboard.")
 
 
     def play_game(self):
