@@ -29,7 +29,8 @@ class DiceGame:
                 pass
 
             else:
-                self.read_rankings()
+                self.read_rankings()  #read ranking and add them to list
+
 
 
     def show_top_scores(self):
