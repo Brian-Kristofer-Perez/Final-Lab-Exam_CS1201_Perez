@@ -2,6 +2,7 @@
 import utils.user as user
 import utils.menu as menu
 import os
+import datetime
 
 
 
@@ -64,11 +65,15 @@ class DiceGame:
     def save_scores(self):
         with open("utils/data/rankings.txt", "a") as file:
 
-            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}\n")
+            file.write(f"{self.player.name}: {self.player.score.total_score}: {self.player.score.stages_won}: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
             self.rankings.append(str.split(f"{self.player.name}, {self.player.score.total_score}, {self.player.score.stages_won}", ", "))
 
             file.close()
+
+            # reset all player scores after saving
+            self.player.score.total_score = 0
+            self.player.score.stages_won = 0
 
             print("Scores saved to local leaderboard.")
 
