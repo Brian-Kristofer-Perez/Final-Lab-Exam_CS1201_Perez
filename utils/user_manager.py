@@ -29,13 +29,18 @@ class UserManager:
 	def load_users(self):
 
 		with open("utils/data/users.txt") as file:
-			name_and_pass = str.split(file.read().strip(), "\n")  # returns a list, excluding unncecessary newlines and spaces
+			name_and_pass = str.split(file.read().strip(), "\n")  # returns a list, excluding unnecessary newlines and spaces
 
-			for i in name_and_pass:
+			# return value format would be ["name, password" , "name2, password2"]
+
+			for i in name_and_pass:  #splits the list into [["name", "password], ["name2", "password2"]]
 				self.info.append(str.split(i, ", "))
 
-			for name, password in self.info:
+
+			for name, password in self.info:  #creates user objects and adds them to content
 				self.content.append(user.User(name, password))
+
+
 
 
 	def save_users(self, username, password):
@@ -86,7 +91,6 @@ class UserManager:
 
 			if not username:
 				menu.menu.main_menu()
-
 			if username not in map(lambda x: x.name, usermanager.content):
 				print("Username doesn't exist. Please make one first.")
 				continue
@@ -99,6 +103,19 @@ class UserManager:
 				menu.menu.main_menu()
 
 			user_object = usermanager.content[list(map(lambda x: x.name, usermanager.content)).index(username)]
+
+			"""
+			remember that username is just a string, it doesn't have the password attribute.
+			to get it, this snippet looks for it in the db
+			
+			It works like this:
+			
+			1. create a map object of contents of usermanager
+			2. convert it to list, so .index() method can apply
+			3. find the index of the person with that specific name in the database using .index(username)
+			4. usermanager.content[index] returns the user object depending on the index
+			
+			"""
 
 			if password != user_object.password:
 				print("Incorrect password, try again.")
