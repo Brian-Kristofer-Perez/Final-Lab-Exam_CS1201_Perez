@@ -114,9 +114,9 @@ class DiceGame:
 
             if self.player.score.best_of_3.score == 3:  #if you win a stage!
 
-                self.win()
+                self.win()  #win!
 
-                next_stage = self.menu()
+                next_stage = self.menu()  #give option to go for another stage
 
                 if next_stage:
                     continue
