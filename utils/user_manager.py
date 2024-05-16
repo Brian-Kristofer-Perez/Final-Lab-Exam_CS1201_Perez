@@ -16,6 +16,9 @@ class UserManager:
 			os.makedirs("utils/data")
 			file = open("utils/data/users.txt", "w")
 
+		if not os.path.exists("utils/data/users.txt"):  #if folder exists but not file, create file
+			file = open("utils/data/users.txt", "w")
+
 		with open("utils/data/users.txt") as file:
 			if not file.read():
 				pass  # if empty, do not read accounts
@@ -106,13 +109,13 @@ class UserManager:
 
 			"""
 			remember that username is just a string, it doesn't have the password attribute.
-			to get it, this snippet looks for it in the db
+			to get it, this snippet above looks for it in the db
 			
 			It works like this:
 			
-			1. create a map object of contents of usermanager
+			1. create a map object of contents of usermanager, and picks out only the names
 			2. convert it to list, so .index() method can apply
-			3. find the index of the person with that specific name in the database using .index(username)
+			3. find the index of the person with that specific name in the map object using .index(username)
 			4. usermanager.content[index] returns the user object depending on the index
 			
 			"""

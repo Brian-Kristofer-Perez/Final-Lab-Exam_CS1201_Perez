@@ -31,6 +31,7 @@ class User(Entity):
         self.password = password
 
         self.dice = 0
+
         self.score = Scores()  #score object, it has both best of 3 and normal scores
 
 
