@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="added counter to leaderboards">
-      <change beforePath="$PROJECT_DIR$/utils/data/rankings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/rankings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/users.txt" afterDir="false" />
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="last commit for today, record video very early morning tomorrow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/data/rankings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/data/users.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leonila Perez\Desktop\pythonProjectLab2\utils" />
@@ -273,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715870515764</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="last commit for today, record video very early morning tomorrow">
+      <option name="closed" value="true" />
+      <created>1715870963889</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715870963889</updated>
+    </task>
+    <task id="LOCAL-00025" summary="last commit for today, record video very early morning tomorrow">
+      <option name="closed" value="true" />
+      <created>1715871044037</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715871044037</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,7 +306,8 @@
     <MESSAGE value="added some comments and... ASCII diagrams for readability" />
     <MESSAGE value="added date and time ID, I hope nothing broke" />
     <MESSAGE value="added counter to leaderboards" />
-    <option name="LAST_COMMIT_MESSAGE" value="added counter to leaderboards" />
+    <MESSAGE value="last commit for today, record video very early morning tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit for today, record video very early morning tomorrow" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
