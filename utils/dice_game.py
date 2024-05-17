@@ -33,10 +33,6 @@ class DiceGame:
                 self.read_rankings()  #read ranking and add them to list
 
 
-
-
-
-
     def read_rankings(self):
 
         with open("utils/data/rankings.txt", "r") as file:
