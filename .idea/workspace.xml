@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="last commit for today, record video very early morning tomorrow">
+    <list default="true" id="be8ad473-b9f2-4c76-8306-1e7113940409" name="Changes" comment="ready!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data/rankings.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data/users.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/data/rankings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/rankings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/data/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/dice_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dice_game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715871044037</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ready!">
+      <option name="closed" value="true" />
+      <created>1715906297241</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715906297241</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -307,7 +316,8 @@
     <MESSAGE value="added date and time ID, I hope nothing broke" />
     <MESSAGE value="added counter to leaderboards" />
     <MESSAGE value="last commit for today, record video very early morning tomorrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="last commit for today, record video very early morning tomorrow" />
+    <MESSAGE value="ready!" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready!" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

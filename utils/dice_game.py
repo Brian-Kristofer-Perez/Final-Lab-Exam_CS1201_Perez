@@ -48,6 +48,8 @@ class DiceGame:
                 self.rankings.append(str.split(i, ": "))
 
 
+
+
     def show_top_scores(self):
 
         with open("utils/data/rankings.txt") as file:

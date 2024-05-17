@@ -1,3 +1,2 @@
-nosam, samplepass
-test1, testtestpass
-apple, saucetest
+test, testpassword
+apple, applesauce
